@@ -1,0 +1,14 @@
+{
+  "name": "2020_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "1": "node 1/app.js",
+    "2": "node 2/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
