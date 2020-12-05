@@ -42,17 +42,18 @@ func main() {
 		fmt.Println(err)
 	}
 
-	// stopped := false
-	// for !stopped {
-	// 	select {
-	// 	case val := <-out:
-	// 		fmt.Println(val)
-	// 	case <-halt:
-	// 		stopped = true
-	// 	default:
-	// 		// fmt.Println("Nothing")
-	// 	}
-	// }
+	stopped := false
+	for !stopped {
+		select {
+		case val := <-out:
+			fmt.Println(val)
+		case <-halt:
+			stopped = true
+		default:
+			// fmt.Println("Nothing")
+		}
+	}
+	fmt.Println(comp.program)
 }
 
 func readInput() ([]int, error) {
@@ -80,7 +81,7 @@ func (a *icc) operate() (err error) {
 	// program := make([]int, len(a.program))
 	// copy(program, a.program)
 
-	program := a.program
+	// program := a.program
 	// input := []int{a.phase, a.input}
 	// fmt.Println(input)
 	inputPtr := 0
@@ -90,7 +91,7 @@ func (a *icc) operate() (err error) {
 	finished := false
 	for i := 0; !finished; {
 
-		opcode := program[i]
+		opcode := a.program[i]
 		DE := opcode % 100
 		C := (opcode / 100) % 10
 		B := (opcode / 1000) % 10
@@ -167,15 +168,15 @@ func (a *icc) operate() (err error) {
 			// less than
 			p1 := a.getParam(i+1, C, relativeBase)
 			p2 := a.getParam(i+2, B, relativeBase)
-			p3 := program[i+3]
+			p3 := a.program[i+3]
 			// if A == 0 {
 			// 	p3 = output[output[i+3]]
 			// }
 			a.verifySize(p3)
 			if p1 < p2 {
-				program[p3] = 1
+				a.program[p3] = 1
 			} else {
-				program[p3] = 0
+				a.program[p3] = 0
 			}
 			i += 4
 
@@ -183,16 +184,16 @@ func (a *icc) operate() (err error) {
 			// equals
 			p1 := a.getParam(i+1, C, relativeBase)
 			p2 := a.getParam(i+2, B, relativeBase)
-			p3 := program[i+3]
+			p3 := a.program[i+3]
 			// if A == 0 {
 			// 	p3 = output[output[i+3]]
 			// }
 			a.verifySize(p3)
 			if p1 == p2 {
-				program[p3] = 1
+				a.program[p3] = 1
 				// fmt.Println("blubb")
 			} else {
-				program[p3] = 0
+				a.program[p3] = 0
 				// fmt.Println("oj")
 			}
 			// fmt.Println(output)
@@ -208,13 +209,13 @@ func (a *icc) operate() (err error) {
 			finished = true
 			a.halt <- 1
 		default:
-			fmt.Printf("Bad opcode: %d\n", program[i])
+			fmt.Printf("Bad opcode: %d\n", a.program[i])
 			finished = true
 			a.halt <- -1
 		}
 	}
 
-	// fmt.Println(output)
+	fmt.Println(a.program)
 	// a.output = output
 
 	return nil
