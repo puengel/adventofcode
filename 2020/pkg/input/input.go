@@ -6,6 +6,7 @@ import (
 	"strings"
 )
 
+// ReadStrings - return string array from given input file and separator
 func ReadStrings(path, separator string) (values []string, err error) {
 	file, err := ioutil.ReadFile(path)
 	if err != nil {
@@ -16,6 +17,7 @@ func ReadStrings(path, separator string) (values []string, err error) {
 	return
 }
 
+// ReadInts - return int array from given input file and separator
 func ReadInts(path, separator string) (values []int, err error) {
 	file, err := ioutil.ReadFile(path)
 	if err != nil {
