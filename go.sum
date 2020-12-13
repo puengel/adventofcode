@@ -2,6 +2,9 @@ github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWR
 github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e h1:fY5BOSpyZCqRo5OhCuC+XN+r/bBCmeuuJtjz+bCNIf8=
 github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5PlCu98SY8svDHJxuZscDgtXS6KTTbou5AhLI=
 github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1/go.mod h1:Q3SI9o4m/ZMnBNeIyt5eFwwo7qiLfzFZmjNmxjkiQlU=
+github.com/deanveloper/modmath v0.0.0-20180521023214-c82838591061 h1:fc4r99SRiiYTTYWkthoD4CsSbpD9gDsMsVAF7hE2sLk=
+github.com/deanveloper/modmath v0.0.0-20180521023214-c82838591061/go.mod h1:m/dzNM7O2q22OXlvWp6dN1nQJ5ayvn/0fOBhruSBtss=
+github.com/deanveloper/nikola v0.0.0-20180521021810-10f97b4e80f4/go.mod h1:cWWudgg2of8kS7NFKlVn8HWfL+UJpBxeQVsocBL0xWA=
 github.com/ernestosuarez/itertools v0.0.0-20190516153236-40a02c159e7b h1:jfqcM/m7Rt6wR6caX7TaRk5tHWCz5HRq+kNCPSNSKTo=
 github.com/ernestosuarez/itertools v0.0.0-20190516153236-40a02c159e7b/go.mod h1:WzH8PFd6m6UcRNbYXLAjgjyvwE5EqBKwTYosDoUDG/Q=
 github.com/juju/ansiterm v0.0.0-20180109212912-720a0952cc2a h1:FaWFmfWdAUKbSCtOU2QjDaorUexogfaMgbipgYATUMU=
