@@ -7,6 +7,8 @@ github.com/deanveloper/modmath v0.0.0-20180521023214-c82838591061/go.mod h1:m/dz
 github.com/deanveloper/nikola v0.0.0-20180521021810-10f97b4e80f4/go.mod h1:cWWudgg2of8kS7NFKlVn8HWfL+UJpBxeQVsocBL0xWA=
 github.com/ernestosuarez/itertools v0.0.0-20190516153236-40a02c159e7b h1:jfqcM/m7Rt6wR6caX7TaRk5tHWCz5HRq+kNCPSNSKTo=
 github.com/ernestosuarez/itertools v0.0.0-20190516153236-40a02c159e7b/go.mod h1:WzH8PFd6m6UcRNbYXLAjgjyvwE5EqBKwTYosDoUDG/Q=
+github.com/glenn-brown/golang-pkg-pcre v0.0.0-20120522223659-48bb82a8b8ce h1:MS/JOOAHf4U2iKl8+1+vzUcG9t9ru1hnZJ9NEBDvMnY=
+github.com/glenn-brown/golang-pkg-pcre v0.0.0-20120522223659-48bb82a8b8ce/go.mod h1:5385NDJ+Gt5loLrAlc8Rr5lKA1L5BE5O94jfdwEX9kg=
 github.com/juju/ansiterm v0.0.0-20180109212912-720a0952cc2a h1:FaWFmfWdAUKbSCtOU2QjDaorUexogfaMgbipgYATUMU=
 github.com/juju/ansiterm v0.0.0-20180109212912-720a0952cc2a/go.mod h1:UJSiEoRfvx3hP73CvoARgeLjaIOjybY9vj8PUPPFGeU=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
@@ -20,5 +22,7 @@ github.com/mattn/go-colorable v0.0.9 h1:UVL0vNpWh04HeJXV0KLcaT7r06gOH2l4OW6ddYRU
 github.com/mattn/go-colorable v0.0.9/go.mod h1:9vuHe8Xs5qXnSaW/c/ABM9alt+Vo+STaOChaDxuIBZU=
 github.com/mattn/go-isatty v0.0.4 h1:bnP0vzxcAdeI1zdubAl5PjU6zsERjGZb7raWodagDYs=
 github.com/mattn/go-isatty v0.0.4/go.mod h1:M+lRXTBqGeGNdLjl/ufCoiOlB5xdOkqRJdNxMWT7Zi4=
+github.com/nasciiboy/regexp4 v0.0.0-20180503180542-6225acff2029 h1:7B0TL8tpwu7tW3/SnJSil7OahEqYaGU+tSFNAlZOHMM=
+github.com/nasciiboy/regexp4 v0.0.0-20180503180542-6225acff2029/go.mod h1:JCHtfkzJS50jDKn4CcDLsUhfnh7sKqyQlg+745jWcqE=
 golang.org/x/sys v0.0.0-20181122145206-62eef0e2fa9b/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
