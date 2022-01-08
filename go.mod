@@ -8,4 +8,5 @@ require (
 	github.com/glenn-brown/golang-pkg-pcre v0.0.0-20120522223659-48bb82a8b8ce // indirect
 	github.com/manifoldco/promptui v0.8.0 // indirect
 	github.com/nasciiboy/regexp4 v0.0.0-20180503180542-6225acff2029 // indirect
+	github.com/sanity-io/litter v1.5.1 // indirect
 )
